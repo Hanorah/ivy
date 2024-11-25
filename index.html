@@ -64,31 +64,6 @@
 	</div>
 	<!-- End Preloader -->
 
-	<!-- Get Pro Button -->
-	<ul class="pro-features">
-		<a class="get-pro" href="#">Get Pro</a>
-		<li class="big-title">GET PROFESSIONAL HELP </li>
-		<li class="title">AT IVY HEALTHCARE</li>
-		<a href="service1.html">
-			<li>Assisted Living</li>
-		</a>
-		<a href="service2.html">
-			<li>Home Care Services</li>
-		</a>
-		<a href="service3.html">
-			<li>Complex &amp; Memory Care</li>
-		</a>
-		<a href="service4.html">
-			<li>Reablement Care</li>
-		</a>
-		<a href="service5.html">
-			<li>Home Care Services</li>
-		</a>
-		<div class="button">
-			<a href="contact.html" target="_blank" class="btn">Contact Us</a>
-			<a href="#services" class="btn">Services </a>
-		</div>
-	</ul>
 
 	<!-- Header Area -->
 	<header class="header">
@@ -710,28 +685,38 @@
 		</div>
 	</div>
 	<!--/End clients -->
+
 	<style>
+		.clients {
+			overflow: hidden;
+			/* Ensure the text stays within the container */
+		}
+
 		.moving-text {
 			font-size: 20px;
 			/* Increased font size */
 			font-weight: bold;
 			/* Bold text */
 			color: white;
-			font-weight: bold;
 			white-space: nowrap;
-			overflow: hidden;
+			/* Ensure the text stays on one line */
 			display: inline-block;
-			width: 100%;
+			/* Align the text inline */
+			padding-right: 100%;
+			/* Space after the text for smooth scrolling */
 			animation: marquee 10s linear infinite;
+			/* Horizontal scrolling animation */
 		}
 
 		@keyframes marquee {
 			0% {
 				transform: translateX(100%);
+				/* Start off the right side */
 			}
 
 			100% {
 				transform: translateX(-100%);
+				/* End off the left side */
 			}
 		}
 	</style>
